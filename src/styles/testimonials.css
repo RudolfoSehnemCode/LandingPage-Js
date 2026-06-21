@@ -34,7 +34,7 @@ testimonials_contnt{
     display: flex;
     align-items: center;
     gap: 20px;
-    background-color: #fff;
+    background-color: var(--cor-neutra-primaria);
     padding: 12px;
     border-radius: 12px;
     box-shadow: var(--sombra-primaria);
@@ -53,6 +53,29 @@ testimonials_contnt{
 }
 
 .feedback-content p span {
-    color: #e9a209;
+    color: var(--cor-quintenaria);
+}
+
+@media screen and (max-width:1170px) {
+    #testimonials{
+        flex-direction: column;
+
+    }
+
+    #testimonials .section-subtitle{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    #testimonials_chef{
+        display: none;
+    }
+
+    #testimonials_content{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 

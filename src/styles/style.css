@@ -1,5 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('header.css');
+@import url('home.css');
+@import url('menu.css');
+@import url('testimonials.css');
+@import url('footer.css');
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -8,10 +13,23 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 
 :root{
     --cor-primaria: #fff9ea;
+    --cor-segundaria:#ffe8b4;
     --sombra-primaria: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    --cor-terciaria:#ffe100;
+    --cor-quartenaria:#ffcb45;
+    --cor-quintenaria: #e9a209;
+
+    --cor-neutra-primaria: #fff;
+    --cor-neutra-segundaria: #1d1d1d
+
 }
 
 body{
@@ -27,7 +45,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffcb45;
+    background-color: var(--cor-quartenaria);
     border-radius: 12px;
     padding: 10px 14px;
     font-weight: 600;
@@ -54,11 +72,11 @@ section{
     justify-content: center;
     width: 45px;
     height: 40px;
-    background-color: #fff;
+    background-color: var(--cor-neutra-primaria);
     font-size: 1.25rem;
     border-radius: 10px;
     text-decoration: none;
-    color: #1d1d1d;
+    color: var(--cor-neutra-segundaria);
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow .3s ease;
 }
